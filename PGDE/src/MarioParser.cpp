@@ -15,7 +15,7 @@ double MarioParser::Evaluate(Subject* s){
     cout << s->trees[0]->str() << endl;
 //    GPAgent << AGPAgent.str() << s->str() << BGPAgent.str();
 
-
+    system("cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.Play ch.idsia.ai.agents.ai.ForwardAgent \n");
 //    system("cd marioai\nant\njava ch.idsia.scenarios.Play ch.idsia.agents.ai.GPAgent");
 
     return 0;

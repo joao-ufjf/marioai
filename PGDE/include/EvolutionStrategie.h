@@ -13,6 +13,8 @@
 #include "Parser.h"
 #include "SimpleIndividuo.h"
 
+#include <random>
+
 class EvolutionStrategie
 {
     public:

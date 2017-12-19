@@ -66,8 +66,8 @@ void Search::evolveMario(){
     int tolerance_count = 0;
     cout << "Criar populacao inicial" << endl;
     this->createsInitialPopulation();
-    DifferencialEvolution* de = new DifferencialEvolution();
-    EvolutionStrategie* es = new EvolutionStrategie();
+//    DifferencialEvolution* de = new DifferencialEvolution();
+//    EvolutionStrategie* es = new EvolutionStrategie();
     //initial population evaluation
 //    if(conf->approach != 0)
 //        replaceAllConst(0, conf->popSize);
@@ -142,8 +142,8 @@ void Search::evolve(){
     int tolerance_count = 0;
     cout << "Criar populacao inicial" << endl;
     this->createsInitialPopulation();
-    DifferencialEvolution* de = new DifferencialEvolution();
-    EvolutionStrategie* es = new EvolutionStrategie();
+//    DifferencialEvolution* de = new DifferencialEvolution();
+//    EvolutionStrategie* es = new EvolutionStrategie();
     //initial population evaluation
 //    if(conf->approach != 0)
 //        replaceAllConst(0, conf->popSize);

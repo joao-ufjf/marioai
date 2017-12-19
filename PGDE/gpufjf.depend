@@ -1406,3 +1406,374 @@
 	<strstream>
 	<fstream>
 
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/DifferencialEvolution.cpp
+	"DifferencialEvolution.h"
+
+1513716534 /home/joao/Documentos/Repositories/marioai/PGDE/inc/DifferencialEvolution.h
+	<cmath>
+	"vector"
+	<time.h>
+	<ctime>
+	<iostream>
+	<fstream>
+	<algorithm>
+	"RK4LSIndividuo.h"
+	"Parser.h"
+	"SimpleIndividuo.h"
+	<random>
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4LSIndividuo.h
+	"Subject.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/Subject.h
+	<iostream>
+	<vector>
+	"Tree.h"
+	<string>
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/Tree.h
+	"No.h"
+	"Configures.h"
+	<iostream>
+	<vector>
+	<tuple>
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/No.h
+	<iostream>
+	<string>
+	<vector>
+	<sstream>
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/Configures.h
+	<stdlib.h>
+	<time.h>
+	<omp.h>
+	"Grammar.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/Grammar.h
+	<tuple>
+	<vector>
+	<string>
+	<sstream>
+	<fstream>
+	<algorithm>
+	"Database.h"
+	"No.h"
+	"Configures.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/Database.h
+	<iostream>
+	<cstring>
+	<fstream>
+	<vector>
+	<cmath>
+	"Configures.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/Parser.h
+	"Configures.h"
+	"Subject.h"
+	<string>
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleIndividuo.h
+	"Subject.h"
+	<sstream>
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/LeastSquareIndividuo.cpp
+	"LeastSquareIndividuo.h"
+	"Tree.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/LeastSquareIndividuo.h
+	"Subject.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/LeastSquareIndividuoBuilder.cpp
+	"LeastSquareIndividuoBuilder.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/LeastSquareIndividuoBuilder.h
+	"IndividuoBuilder.h"
+	"LeastSquareIndividuo.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/IndividuoBuilder.h
+	"Subject.h"
+	<string>
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/LeastSquareParser.cpp
+	"LeastSquareParser.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/LeastSquareParser.h
+	"Configures.h"
+	"Parser.h"
+	"../inc/QRDecomposition.h"
+	<vector>
+	<stack>
+	<tuple>
+	<cmath>
+	"SimpleParser.h"
+	"LeastSquareIndividuo.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/QRDecomposition.h
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleParser.h
+	"Configures.h"
+	"Parser.h"
+	"SimpleIndividuo.h"
+	"DifferencialEvolution.h"
+	"EvolutionStrategie.h"
+	<vector>
+	<stack>
+	<tuple>
+	<cmath>
+
+1513716548 /home/joao/Documentos/Repositories/marioai/PGDE/include/EvolutionStrategie.h
+	<cmath>
+	"vector"
+	<time.h>
+	<ctime>
+	<iostream>
+	<fstream>
+	<algorithm>
+	"RK4LSIndividuo.h"
+	"Parser.h"
+	"SimpleIndividuo.h"
+	<random>
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/LSDerivadasParser.cpp
+	"LSDerivadasParser.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/LSDerivadasParser.h
+	"Configures.h"
+	"Parser.h"
+	"QRDecomposition.h"
+	<vector>
+	<stack>
+	<tuple>
+	<cmath>
+	"LeastSquareIndividuo.h"
+	"SimpleParser.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/ParserDerivadas.cpp
+	"ParserDerivadas.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/ParserDerivadas.h
+	"Configures.h"
+	"Parser.h"
+	<vector>
+	<stack>
+	<tuple>
+	<cmath>
+	"SimpleParser.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/QRDecomposition.cpp
+	"QRDecomposition.h"
+	<cmath>
+	<stdlib.h>
+	<string.h>
+	<iostream>
+	<memory.h>
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4AGParser.cpp
+	"RK4AGParser.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4AGParser.h
+	"SimpleParser.h"
+	"RK4LSIndividuo.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4LSDerivadasParser.cpp
+	"RK4LSDerivadasParser.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4LSDerivadasParser.h
+	"Configures.h"
+	"Parser.h"
+	"QRDecomposition.h"
+	<vector>
+	<stack>
+	<tuple>
+	<cmath>
+	"RK4LSIndividuo.h"
+	"SimpleParser.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4LSDParser.cpp
+	"RK4LSDParser.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4LSDParser.h
+	"SimpleParser.h"
+	"RK4LSIndividuo.h"
+	"LeastSquareIndividuo.h"
+	"QRDecomposition.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4LSIndividuo.cpp
+	"RK4LSIndividuo.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4LSIndividuoBuilder.cpp
+	"RK4LSIndividuoBuilder.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4LSIndividuoBuilder.h
+	"IndividuoBuilder.h"
+	"RK4LSIndividuo.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4sParser.cpp
+	"RK4sParser.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/RK4sParser.h
+	"SimpleParser.h"
+	"RK4LSIndividuo.h"
+	"DifferencialEvolution.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/Configures.cpp
+	"Configures.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/Crossover.cpp
+	"Crossover.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/Crossover.h
+	"Subject.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/Database.cpp
+	"Database.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/EvolutionStrategie.cpp
+	"EvolutionStrategie.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/Grammar.cpp
+	"Grammar.h"
+	"Configures.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/IndividuoBuilder.cpp
+	"IndividuoBuilder.h"
+
+1513716869 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/main.cpp
+	<iostream>
+	"Database.h"
+	"Grammar.h"
+	"No.h"
+	"Configures.h"
+	"Search.h"
+	"Configures.h"
+	"SimpleParser.h"
+	"../inc/ParserDerivadas.h"
+	"../inc/LeastSquareParser.h"
+	"../inc/LSDerivadasParser.h"
+	"IndividuoBuilder.h"
+	"LeastSquareIndividuoBuilder.h"
+	"../inc/RK4LSDerivadasParser.h"
+	"../inc/RK4LSIndividuoBuilder.h"
+	"Subject.h"
+	"RK4sParser.h"
+	"../inc/RK4AGParser.h"
+	"RK4LSDParser.h"
+	"MarioParser.h"
+	<sstream>
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/Search.h
+	"Subject.h"
+	"Grammar.h"
+	"Tree.h"
+	"Configures.h"
+	"Parser.h"
+	"SimpleParser.h"
+	<cmath>
+	<algorithm>
+	<exception>
+	"Selection.h"
+	"TournamentSelection.h"
+	"PopulationReplacement.h"
+	"SimpleReplace.h"
+	"IndividuoBuilder.h"
+	"SimpleIndividuoBuilder.h"
+	"DifferencialEvolution.h"
+	"EvolutionStrategie.h"
+	"Mutation.h"
+	"SimpleMutation.h"
+	"Crossover.h"
+	"SimpleCrossover.h"
+	<omp.h>
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/Selection.h
+	"Subject.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/TournamentSelection.h
+	"Selection.h"
+	"Subject.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/PopulationReplacement.h
+	"Subject.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleReplace.h
+	"Subject.h"
+	"PopulationReplacement.h"
+	"Configures.h"
+	<iostream>
+	<algorithm>
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleIndividuoBuilder.h
+	"IndividuoBuilder.h"
+	"SimpleIndividuo.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/Mutation.h
+	"Subject.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleMutation.h
+	"Mutation.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleCrossover.h
+	"Crossover.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/include/MarioParser.h
+	"SimpleParser.h"
+	<strstream>
+	<fstream>
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/Mutation.cpp
+	"Mutation.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/No.cpp
+	"No.h"
+	<iostream>
+	<string>
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/Parser.cpp
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/PopulationReplacement.cpp
+	"PopulationReplacement.h"
+
+1513716672 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/Search.cpp
+	"Search.h"
+	<vector>
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/Selection.cpp
+	"Selection.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleCrossover.cpp
+	"SimpleCrossover.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleIndividuo.cpp
+	"SimpleIndividuo.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleIndividuoBuilder.cpp
+	"SimpleIndividuoBuilder.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleMutation.cpp
+	"SimpleMutation.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleParser.cpp
+	"SimpleParser.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/SimpleReplace.cpp
+	"SimpleReplace.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/Subject.cpp
+	"Subject.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/TournamentSelection.cpp
+	"TournamentSelection.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/Tree.cpp
+	"Tree.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/src/MarioParser.cpp
+	"MarioParser.h"
+
+1513715819 source:/home/joao/Documentos/Repositories/marioai/PGDE/inc/EvolutionStrategie.cpp
+	"EvolutionStrategie.h"
+
+1513715819 /home/joao/Documentos/Repositories/marioai/PGDE/inc/EvolutionStrategie.h
+
