@@ -1,7 +1,5 @@
-<expr> ::= <expr> <expr> |  <cond>
-<cond> ::= if(enemies[ <pos> ][ <pos> ] <comp> 0){ <cond> } | if(enemies[ <pos> ][ <pos> ] <comp> 0){ <cond> }else{ <cond> } | <action_key> = <bool> ;
+<expr> ::= if(enemies[ <pos> ][ <pos> ] <comp> 0){ <expr> }else{ <expr> } | action[ <key> ] = <bool> ;
 <comp> ::= == | !=
-<action_key> ::= action[ <key> ]
 <key> ::= Mario.KEY_LEFT | Mario.KEY_RIGHT | Mario.KEY_DOWN | Mario.KEY_JUMP | Mario.KEY_SPEED
 <key2> ::= 0 | 1 | 2 | 3 | 4
 <bool> ::= false | true

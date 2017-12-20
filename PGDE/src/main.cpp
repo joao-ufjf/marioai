@@ -33,7 +33,7 @@ int main(int argc, char** argv){
 	srand(atoi(argv[1]));
 
     //set parametros
-    conf->MAXDEEP = 10;
+    conf->MAXDEEP = 13;
 
     conf->generations = 10;
     conf->popSize = 10;
