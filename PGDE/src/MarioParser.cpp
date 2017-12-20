@@ -16,6 +16,7 @@ double MarioParser::Evaluate(Subject* s){
     stringstream GPAgent;
 //    GPAgent << AGPAgent.str() << s->str() << BGPAgent.str();
     ofstream agent("marioai/src/ch/idsia/ai/agents/ai/GPAgent.java");
+//    cout << s->trees[0]->str() << endl;
     agent << AGPAgent.str() << " " << s->trees[0]->str() << " " << BGPAgent.str();
     agent.close();
 
