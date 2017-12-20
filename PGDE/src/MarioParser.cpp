@@ -21,7 +21,8 @@ double MarioParser::Evaluate(Subject* s){
 
     ///Compila e executa o emulador
 //    system("cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.Play ch.idsia.ai.agents.ai.ForwardAgent > out\n");
-    string str = "cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.CompetitionScore ch.idsia.ai.agents.ai.GPAgent ";
+//    string str = "cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.CompetitionScore ch.idsia.ai.agents.ai.GPAgent ";
+    string str = "cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.Play ch.idsia.ai.agents.ai.GPAgent ";
     str = str + to_string(rand());
     str = str + " > out\n";
     system(str.c_str());
@@ -33,7 +34,8 @@ double MarioParser::Evaluate(Subject* s){
     arq >> scorestr;
     arq.close();
     score = atof(scorestr.c_str());
-    cout << score << endl;
+//    cout << score << endl;
+//    cin.get();
 
     return score;
 }

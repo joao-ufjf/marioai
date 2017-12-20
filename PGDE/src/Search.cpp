@@ -74,7 +74,6 @@ void Search::evolveMario(){
     EvaluatePopulation(0, conf->popSize);
 
     stable_sort(pop, pop + conf->popSize, SortPopulationFitness);
-    cout << "0 " << pop[0]->trees[0]->fitness << endl;
 
     //cin.get();
     Subject* best = NULL;
@@ -87,6 +86,9 @@ void Search::evolveMario(){
     vector<double> fitInTime;
     fitInTime.push_back(pop[0]->fitness);
 
+    cout << 0 << " " << pop[0]->fitness << " ";
+    pop[0]->print();
+    fitInTime.push_back(pop[0]->fitness);
 
     for(int it = 1; conf->evaluations < maxEvaluations; it++){
         Operate();//Realiza cross e mut
@@ -100,10 +102,10 @@ void Search::evolveMario(){
             delete pop[i];
         }
 
-        cout << it << " " << pop[0]->trees[0]->fitness << " ";
+        cout << it << " " << pop[0]->fitness << " ";
         pop[0]->print();
         fitInTime.push_back(pop[0]->fitness);
-        cin.get();
+//        cin.get();
     }
 
 
@@ -279,19 +281,20 @@ void Search::Replace(){
 void Search::EvaluatePopulation(int initialIndex, int finalIndex, int optimizeRange){
     #pragma omp parallel for num_threads(conf->NUM_THREADS)
     for(int i = initialIndex; i < finalIndex; i++){
-        if(i < optimizeRange && !pop[i]->optimized){
-            Subject* ind_ = pop[i]->clone();
-            parser->Evaluate(ind_);
-            parser->Optimize(ind_);
-            if(ind_->fitness < pop[i]->fitness){
-                cout << pop[i]->fitness << " " << ind_->fitness << endl;
-                swap(pop[i], ind_);
-                delete ind_;
-            }
-        }
-        else{
+//        if(i < optimizeRange && !pop[i]->optimized){
+//            Subject* ind_ = pop[i]->clone();
+//            parser->Evaluate(ind_);
+//            parser->Optimize(ind_);
+//            if(ind_->fitness < pop[i]->fitness){
+//                cout << pop[i]->fitness << " " << ind_->fitness << endl;
+//                swap(pop[i], ind_);
+//                delete ind_;
+//            }
+//        }
+//        else{
             pop[i]->fitness = parser->Evaluate(pop[i]);
-        }
+//            cout << "F=" << pop[i]->fitness << endl;
+//        }
         conf->evaluations++;
 //        cout << "   " << i << " " << pop[i]->fitness << endl;
     }
@@ -308,21 +311,22 @@ void Search::EvaluatePopulation(int initialIndex, int finalIndex, int optimizeRa
 void Search::EvaluatePopulationValidation(int initialIndex, int finalIndex, int optimizeRange){
     #pragma omp parallel for num_threads(conf->NUM_THREADS)
     for(int i = initialIndex; i < finalIndex; i++){
-        if(i < optimizeRange && !pop[i]->optimized){
-            Subject* ind_ = pop[i]->clone();
-//            ind_->trees[0]->replaceAllConst();
-            parserValidation->Optimize(ind_);
-            ind_->fitness = parser->Evaluate(ind_);
-            if(ind_->fitness < pop[i]->fitness){
-                cout << ind_->fitness << " " << pop[i]->fitness << endl;
-//                cin.get();
-                swap(pop[i], ind_);
-                delete ind_;
-            }
-        }
-        else{
-            pop[i]->fitness = parser->Evaluate(pop[i]);
-        }
+//        if(i < optimizeRange && !pop[i]->optimized){
+//            Subject* ind_ = pop[i]->clone();
+////            ind_->trees[0]->replaceAllConst();
+//            parserValidation->Optimize(ind_);
+//            ind_->fitness = parser->Evaluate(ind_);
+//            if(ind_->fitness < pop[i]->fitness){
+//                cout << ind_->fitness << " " << pop[i]->fitness << endl;
+////                cin.get();
+//                swap(pop[i], ind_);
+//                delete ind_;
+//            }
+//        }
+//        else{
+            pop[i]->fitnessValidation = parserValidation->Evaluate(pop[i]);
+            cout << pop[i]->fitnessValidation << endl;
+//        }
         conf->evaluations++;
 //        cout << "   " << i << " " << pop[i]->fitness << endl;
     }
@@ -465,10 +469,10 @@ void Search::printBestIndividuo(){
 
  bool Search::SortPopulationFitness(Subject* a, Subject* b){
      //cout << "FITNESS: " << a->trees[0]->fitness << " - " << b->trees[0]->fitness << endl;
-     return a->trees[0]->fitness < b->trees[0]->fitness;
+     return a->fitness > b->fitness;
  }
  bool Search::SortPopulationFitnessValidation(Subject* a, Subject* b){
-    return a->fitnessValidation < b->fitnessValidation;
+    return a->fitnessValidation > b->fitnessValidation;
  }
 
 Search::~Search()

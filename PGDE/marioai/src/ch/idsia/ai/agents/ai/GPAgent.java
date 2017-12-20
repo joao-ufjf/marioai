@@ -112,13 +112,10 @@ public class GPAgent extends BasicAIAgent implements Agent
         byte[][] levelScene = observation.getCompleteObservation(/*1, 0*/);
         float[] marioPos = observation.getMarioFloatPos();
         float[] enemiesPos = observation.getEnemiesFloatPos();
-		byte[][] landscape = observation.getEnemiesObservation(); // default: ZLevelEnemies = 0
-		byte[][] enemies = observation.getLevelSceneObservation();// default: ZLevelScene = 1 
-
+	byte[][] landscape = observation.getEnemiesObservation(); // default: ZLevelEnemies = 0
+	byte[][] enemies = observation.getLevelSceneObservation();// default: ZLevelScene = 1 
 	
-	
-  action[ 1 ] = true ;
- 		
+  action[ Mario.KEY_RIGHT ] = true ; action[ Mario.KEY_RIGHT ] = true ; action[ Mario.KEY_LEFT ] = true ; action[ Mario.KEY_DOWN ] = true ; 		
 	//Begin of BGPAgent
 	return action;
     }
