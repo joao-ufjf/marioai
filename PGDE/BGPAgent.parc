@@ -1,13 +1,5 @@
-//Begin of BGPAgent
+		
+	//Begin of BGPAgent
 	return action;
     }
-
-    public AGENT_TYPE getType()
-    {
-        return Agent.AGENT_TYPE.AI;
-    }
-
-    public String getName() {        return name;    }
-
-    public void setName(String Name) { this.name = Name;    }
 }

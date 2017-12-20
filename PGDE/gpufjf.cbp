@@ -28,7 +28,7 @@
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="19 input/grammar/itaDE.dat input/data/newf7r.dat input/data/1024.grp 0" />
+				<Option parameters="19 input/grammar/mario.gram input/data/newf7r.dat input/data/1024.grp 0" />
 				<Compiler>
 					<Add option="-O2" />
 					<Add option="-std=c++11" />

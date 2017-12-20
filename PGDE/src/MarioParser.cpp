@@ -11,24 +11,30 @@ MarioParser::MarioParser()
 }
 
 double MarioParser::Evaluate(Subject* s){
+    ///cria o arquivo do controlador
+        ///verificar se realmente precisa do stringstream pra ler o buif dos arquivos
     stringstream GPAgent;
-//    cout << s->trees[0]->str() << endl;
 //    GPAgent << AGPAgent.str() << s->str() << BGPAgent.str();
+    ofstream agent("marioai/src/ch/idsia/ai/agents/ai/GPAgent.java");
+    agent << AGPAgent.str() << " " << s->trees[0]->str() << " " << BGPAgent.str();
+    agent.close();
 
+    ///Compila e executa o emulador
 //    system("cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.Play ch.idsia.ai.agents.ai.ForwardAgent > out\n");
-    string str = "cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.CompetitionScore ch.idsia.ai.agents.ai.ForwardAgent ";
+    string str = "cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.CompetitionScore ch.idsia.ai.agents.ai.GPAgent ";
     str = str + to_string(rand());
     str = str + " > out\n";
     system(str.c_str());
 
+    ///lê o score
     ifstream arq("marioai/classes/out");
     string scorestr;
     double score;
-
     arq >> scorestr;
     arq.close();
     score = atof(scorestr.c_str());
     cout << score << endl;
+
     return score;
 }
 
