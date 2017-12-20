@@ -1,4 +1,4 @@
-<expr> ::= if(enemies[ <pos> ][ <pos> ] <comp> 0){ <expr> }else{ <expr> } | <action>
+<expr> ::= if(landscape[ <pos> ][ <pos> ] <comp> 0){ <expr> }else{ <expr> } | if(enemies[ <pos> ][ <pos> ] <comp> 0){ <expr> }else{ <expr> } | <action>
 <action> ::= action[ <key> ] = <bool> ;
 <comp> ::= == | !=
 <key> ::= Mario.KEY_LEFT | Mario.KEY_RIGHT | Mario.KEY_DOWN | Mario.KEY_JUMP | Mario.KEY_SPEED

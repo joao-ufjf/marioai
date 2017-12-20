@@ -115,7 +115,7 @@ public class GPAgent extends BasicAIAgent implements Agent
 	byte[][] landscape = observation.getEnemiesObservation(); // default: ZLevelEnemies = 0
 	byte[][] enemies = observation.getLevelSceneObservation();// default: ZLevelScene = 1 
 	
-  if(enemies[ 14 ][ 1 ] != 0){ if(enemies[ 10 ][ 16 ] != 0){ action[ Mario.KEY_JUMP ] = true ; }else{ if(enemies[ 11 ][ 12 ] != 0){ action[ Mario.KEY_LEFT ] = false ; }else{ if(enemies[ 8 ][ 8 ] != 0){ if(enemies[ 11 ][ 16 ] != 0){ if(enemies[ 4 ][ 7 ] != 0){ if(enemies[ 20 ][ 6 ] != 0){ action[ Mario.KEY_RIGHT ] = false ; }else{ if(enemies[ 0 ][ 20 ] != 0){ if(enemies[ 8 ][ 5 ] != 0){ if(enemies[ 1 ][ 0 ] != 0){ action[ Mario.KEY_SPEED ] = false ; }else{ action[ Mario.KEY_LEFT ] = true ; } }else{ if(enemies[ 15 ][ 21 ] != 0){ action[ Mario.KEY_LEFT ] = true ; }else{ action[ Mario.KEY_JUMP ] = true ; } } }else{ if(enemies[ 20 ][ 16 ] != 0){ action[ Mario.KEY_DOWN ] = true ; }else{ action[ Mario.KEY_JUMP ] = true ; } } } }else{ action[ Mario.KEY_RIGHT ] = false ; } }else{ if(enemies[ 15 ][ 17 ] != 0){ action[ Mario.KEY_RIGHT ] = true ; }else{ if(enemies[ 19 ][ 17 ] != 0){ action[ Mario.KEY_SPEED ] = true ; }else{ if(enemies[ 13 ][ 17 ] != 0){ action[ Mario.KEY_SPEED ] = false ; }else{ if(enemies[ 15 ][ 16 ] != 0){ if(enemies[ 0 ][ 20 ] != 0){ action[ Mario.KEY_RIGHT ] = false ; }else{ action[ Mario.KEY_RIGHT ] = false ; } }else{ if(enemies[ 12 ][ 8 ] != 0){ action[ Mario.KEY_JUMP ] = false ; }else{ action[ Mario.KEY_SPEED ] = false ; } } } } } } }else{ if(enemies[ 19 ][ 16 ] != 0){ action[ Mario.KEY_RIGHT ] = true ; }else{ action[ Mario.KEY_SPEED ] = false ; } } } } }else{ action[ Mario.KEY_LEFT ] = true ; } 		
+  action[ Mario.KEY_SPEED ] = true ; 		
 	//Begin of BGPAgent
 	return action;
     }
