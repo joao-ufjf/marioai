@@ -12,13 +12,24 @@ MarioParser::MarioParser()
 
 double MarioParser::Evaluate(Subject* s){
     stringstream GPAgent;
-    cout << s->trees[0]->str() << endl;
+//    cout << s->trees[0]->str() << endl;
 //    GPAgent << AGPAgent.str() << s->str() << BGPAgent.str();
 
-    system("cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.Play ch.idsia.ai.agents.ai.ForwardAgent \n");
-//    system("cd marioai\nant\njava ch.idsia.scenarios.Play ch.idsia.agents.ai.GPAgent");
+//    system("cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.Play ch.idsia.ai.agents.ai.ForwardAgent > out\n");
+    string str = "cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.CompetitionScore ch.idsia.ai.agents.ai.ForwardAgent ";
+    str = str + to_string(rand());
+    str = str + " > out\n";
+    system(str.c_str());
 
-    return 0;
+    ifstream arq("marioai/classes/out");
+    string scorestr;
+    double score;
+
+    arq >> scorestr;
+    arq.close();
+    score = atof(scorestr.c_str());
+    cout << score << endl;
+    return score;
 }
 
 MarioParser::~MarioParser()

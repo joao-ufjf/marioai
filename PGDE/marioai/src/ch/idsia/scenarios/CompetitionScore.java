@@ -43,7 +43,7 @@ public class CompetitionScore {
         options.setNumberOfTrials(1);
         options.setVisualization(false);
         options.setMaxFPS(true);
-        System.out.println("Scoring controller " + controller + " with starting seed " + startingSeed);
+        //System.out.println("Scoring controller " + controller + " with starting seed " + startingSeed);
 
         double competitionScore = 0;
 
@@ -51,6 +51,7 @@ public class CompetitionScore {
         competitionScore += testConfig (controller, options, startingSeed, 3, false);
         competitionScore += testConfig (controller, options, startingSeed, 5, false);
         competitionScore += testConfig (controller, options, startingSeed, 10, false);
+	System.out.println(competitionScore + "\n\n");
         System.out.println("Competition score: " + competitionScore + "\n\n");
         System.out.println("Number of levels cleared = " + marioStatusSum);
         System.out.println("Additional (tie-breaker) info: ");
@@ -69,12 +70,11 @@ public class CompetitionScore {
 
         StatisticalSummary ss = test (controller, options, seed);
         double averageTimeTaken = controller.averageTimeTaken();
-        System.out.printf("Difficulty %d score %.4f (avg time %.4f)\n",
-                level, ss.mean(), averageTimeTaken);
+        //System.out.printf("Difficulty %d score %.4f (avg time %.4f)\n", level, ss.mean(), averageTimeTaken);
         if (averageTimeTaken > 40) {
-            System.out.println("Maximum allowed average time is 40 ms per time step.\n" +
-                    "Controller disqualified");
-            System.exit (0);
+            //System.out.println("Maximum allowed average time is 40 ms per time step.\n" + "Controller disqualified");
+            //System.exit (0);
+	    return Double.POSITIVE_INFINITY;
         }
         return ss.mean();
     }
