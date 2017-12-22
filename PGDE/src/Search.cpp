@@ -66,6 +66,7 @@ void Search::evolveMario(){
     int tolerance_count = 0;
     cout << "Criar populacao inicial" << endl;
     this->createsInitialPopulation();
+    cout << "pop criada";
 //    DifferencialEvolution* de = new DifferencialEvolution();
 //    EvolutionStrategie* es = new EvolutionStrategie();
     //initial population evaluation
@@ -106,6 +107,11 @@ void Search::evolveMario(){
         pop[0]->print();
         fitInTime.push_back(pop[0]->fitness);
 //        cin.get();
+        ofstream agent("save/GPAgent.java");
+        //cout << s->trees[0]->str() << endl;
+        agent << "//geracao " << it << " fit: " << pop[0]->fitness << endl << pop[0]->trees[0]->str();
+        agent.close();
+
     }
 
 

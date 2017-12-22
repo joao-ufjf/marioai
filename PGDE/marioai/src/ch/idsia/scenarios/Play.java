@@ -26,7 +26,7 @@ public class Play {
         options.setAgent(controller);
         Task task = new ProgressTask(options);
         options.setMaxFPS(true);
-        options.setVisualization(false);
+        options.setVisualization(true);
         options.setNumberOfTrials(1);
         options.setMatlabFileName("");
         options.setLevelRandSeed((int) (Math.random () * Integer.MAX_VALUE));
