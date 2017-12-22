@@ -1,10 +1,10 @@
-Buildfile: /home/felipe/Documents/github/marioai/PGDE/marioai/build.xml
+Buildfile: /home/joao/Documents/marioai/PGDE/marioai/build.xml
 
 init:
 
 compile:
-    [javac] /home/felipe/Documents/github/marioai/PGDE/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 1 source file to /home/felipe/Documents/github/marioai/PGDE/marioai/classes
+    [javac] /home/joao/Documents/marioai/PGDE/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/joao/Documents/marioai/PGDE/marioai/classes
 
 BUILD SUCCESSFUL
 Total time: 0 seconds

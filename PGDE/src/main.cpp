@@ -27,6 +27,7 @@ using namespace std;
 //#define RK4Parser
 int main(int argc, char** argv){
     cout << "Hello GP-ufjf!" << endl;
+//    return 0;
     conf = new Configures();
 
     conf->approach = atoi(argv[5]);
@@ -35,7 +36,7 @@ int main(int argc, char** argv){
     //set parametros
     conf->MAXDEEP = 15;
 
-    conf->generations = 500;
+    conf->generations = 1000;
     conf->popSize = 50;
     conf->elitism = 0.1;
     conf->crossoverRate = 0.9;

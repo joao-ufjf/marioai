@@ -1,0 +1,7 @@
+<expr> ::= if( <condition> ){ <expr> }else{ <expr> } | <expr> <expr> | <action>
+<condition> ::= levelScene[11+ <pos> ][11+ <pos> ] <comp> 0 | observation.isMarioOnGround() | observation.isMarioOnGround() | observation.mayMarioJump()
+<action> ::= action[ <key> ] = <bool> ;
+<comp> ::= == | !=
+<key> ::= Mario.KEY_LEFT | Mario.KEY_RIGHT | Mario.KEY_DOWN | Mario.KEY_JUMP | Mario.KEY_SPEED
+<bool> ::= false | true
+<pos> ::= -3 | -2 | -1 | 0 | 1 | 2 | 3

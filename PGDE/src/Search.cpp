@@ -91,7 +91,7 @@ void Search::evolveMario(){
     pop[0]->print();
     fitInTime.push_back(pop[0]->fitness);
 
-    for(int it = 1; conf->evaluations < maxEvaluations; it++){
+    for(int it = 1; it < conf->generations; it++){
         Operate();//Realiza cross e mut
 
         EvaluatePopulation(conf->popSize, conf->popSize * 2);
