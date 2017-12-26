@@ -66,7 +66,7 @@ void Search::evolveMario(){
     int tolerance_count = 0;
     cout << "Criar populacao inicial" << endl;
     this->createsInitialPopulation();
-    cout << "pop criada";
+    cout << "pop criada" << endl;
 //    DifferencialEvolution* de = new DifferencialEvolution();
 //    EvolutionStrategie* es = new EvolutionStrategie();
     //initial population evaluation
@@ -81,14 +81,14 @@ void Search::evolveMario(){
 
     int timeStamp = 100;
     int DECounter = 1;
-    int maxEvaluations = 100000;
+    int maxEvaluations = 50;
 
     conf->optimizationEvaluations = 100;
     vector<double> fitInTime;
     fitInTime.push_back(pop[0]->fitness);
 
-    cout << 0 << " " << pop[0]->fitness << " ";
-    pop[0]->print();
+    cout << 0 << " " << pop[0]->fitness << " " << endl;
+//    pop[0]->print();
     fitInTime.push_back(pop[0]->fitness);
 
     for(int it = 1; it < conf->generations; it++){
@@ -103,42 +103,60 @@ void Search::evolveMario(){
             delete pop[i];
         }
 
-        cout << it << " " << pop[0]->fitness << " ";
-        pop[0]->print();
+        if(pop[0]->fitness >= 4000.0){
+            cout << "upa lele" << endl;
+            conf->level++;
+            EvaluatePopulation(0, conf->popSize);
+            stable_sort(pop, pop + conf->popSize, SortPopulationFitness);
+        }
+
+        cout << it << " " << conf->level << " " << pop[0]->fitness << " " << endl;
+//        pop[0]->print();
         fitInTime.push_back(pop[0]->fitness);
 //        cin.get();
-        ofstream agent("save/GPAgent.java");
-        //cout << s->trees[0]->str() << endl;
+
+        ofstream agent(conf->agentName);
         agent << "//geracao " << it << " fit: " << pop[0]->fitness << endl << pop[0]->trees[0]->str();
         agent.close();
 
     }
 
+    cout << "ACABOU TREINAMENTO" << endl;
 
-    cout << "ACABOU TREINAMENTO";
-    /*** Com a populacao treinada, hora de realizar a validacao ***/
-    for(int i = 0; i < conf->popSize; i++){
-        pop[i]->fitnessValidation = parserValidation->Evaluate(pop[i]);
+    int testSet[4] = {0, 3, 5, 10};
+    int testEvaluations = 1000;
+    bool cleared;
+    int totalCleared;
+    double fit;
+    for(int i = 0; i < 4; i++){
+        conf->level = i;
+        cleared = false;
+        totalCleared = 0;
+        pop[0]->fitnessTest = 0;
+        for(int j = 0; j < testEvaluations; j++){
+            conf->seed = j;
+            fit = parser->Evaluate(pop[0]);
+            pop[0]->fitnessTest += fit;
+            if(fit >= 4000.0){
+                cleared = true;
+                totalCleared++;
+            }
+        }
+        pop[0]->fitnessTest /= testEvaluations;
+        cout << testSet[i] << " " << cleared << " " << totalCleared << " " << pop[0]->fitnessTest << endl;
     }
-    cout << "VALIDADO:" << endl;
-    stable_sort(pop, pop + conf->popSize, SortPopulationFitnessValidation);
 
-    //cin.get();
-    pop[0]->fitness = parser->Evaluate(pop[0]);
-    pop[0]->fitnessValidation = parserValidation->Evaluate(pop[0]);
-    pop[0]->fitnessTest = parserTest->Evaluate(pop[0]);
-
-    fitInTime.push_back(pop[0]->fitnessTest);
-    for(int k = 0; k < fitInTime.size(); k++)
-        cout << fitInTime.at(k) << endl;
-    for(int k = fitInTime.size(); k <= 200; k++)
-        cout << fitInTime.at(fitInTime.size() - 1) << endl;
-
-    cout << "--------------Results--------------" << endl;
-    pop[0]->print();
-
-    cout << "Fitness test: " << pop[0]->fitnessTest <<endl;
-    cout << endl << pop[0]->fitness << " " << pop[0]->fitnessValidation << " " << pop[0]->fitnessTest << endl;
+//    fitInTime.push_back(pop[0]->fitnessTest);
+//    for(int k = 0; k < fitInTime.size(); k++)
+//        cout << fitInTime.at(k) << endl;
+//    for(int k = fitInTime.size(); k <= 200; k++)
+//        cout << fitInTime.at(fitInTime.size() - 1) << endl;
+//
+//    cout << "--------------Results--------------" << endl;
+//    pop[0]->print();
+//
+//    cout << "Fitness test: " << pop[0]->fitnessTest <<endl;
+//    cout << endl << pop[0]->fitness << " " << pop[0]->fitnessValidation << " " << pop[0]->fitnessTest << endl;
 }
 
 /**
@@ -287,31 +305,10 @@ void Search::Replace(){
 void Search::EvaluatePopulation(int initialIndex, int finalIndex, int optimizeRange){
     #pragma omp parallel for num_threads(conf->NUM_THREADS)
     for(int i = initialIndex; i < finalIndex; i++){
-//        if(i < optimizeRange && !pop[i]->optimized){
-//            Subject* ind_ = pop[i]->clone();
-//            parser->Evaluate(ind_);
-//            parser->Optimize(ind_);
-//            if(ind_->fitness < pop[i]->fitness){
-//                cout << pop[i]->fitness << " " << ind_->fitness << endl;
-//                swap(pop[i], ind_);
-//                delete ind_;
-//            }
-//        }
-//        else{
-            pop[i]->fitness = parser->Evaluate(pop[i]);
-//            cout << "F=" << pop[i]->fitness << endl;
-//        }
+        pop[i]->fitness = parser->Evaluate(pop[i]);
+//        cout << "    " << pop[i]->fitness << endl;
         conf->evaluations++;
-//        cout << "   " << i << " " << pop[i]->fitness << endl;
     }
-
-//    #pragma omp parallel for num_threads(conf->NUM_THREADS)
-//    for(int i = initialIndex; i < finalIndex; i++){
-//        parser->Optimize(pop[i]);
-//        pop[i]->fitness = parser->Evaluate(pop[i]);
-//        conf->evaluations++;
-////        cout << "   " << i << " " << pop[i]->fitness << endl;
-//    }
 }
 
 void Search::EvaluatePopulationValidation(int initialIndex, int finalIndex, int optimizeRange){

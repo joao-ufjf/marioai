@@ -22,9 +22,13 @@ double MarioParser::Evaluate(Subject* s){
 
     ///Compila e executa o emulador
 //    system("cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.Play ch.idsia.ai.agents.ai.ForwardAgent > out\n");
-    string str = "cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.CompetitionScore ch.idsia.ai.agents.ai.GPAgent ";
+//    string str = "cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.CompetitionScore ch.idsia.ai.agents.ai.GPAgent ";
 //    string str = "cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.Play ch.idsia.ai.agents.ai.GPAgent ";
-    str = str + to_string(rand());
+    string str = "cd marioai \n ant > garbage \n cd classes \n java ch.idsia.scenarios.GPPlay ch.idsia.ai.agents.ai.GPAgent ";
+//    str = str + to_string(rand());
+    str = str + to_string(conf->seed);
+    str = str + " ";
+    str = str + to_string(conf->level);
     str = str + " > out\n";
     system(str.c_str());
 

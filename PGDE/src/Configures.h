@@ -29,9 +29,13 @@ class Configures {
     int NUM_THREADS = 1;
     int memorySize;
     int cicles;
+    int seed;
 
     int optimizationEvaluations;
     int approach;
+
+    int level = 0;
+    std::string agentName;
 
     int evaluations = 0;
     bool optimize = false;

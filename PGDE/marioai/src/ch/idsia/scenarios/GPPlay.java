@@ -23,7 +23,7 @@ public class GPPlay {
         options.setAgent(controller);
         Task task = new ProgressTask(options);
         options.setMaxFPS(true);
-        options.setVisualization(true);
+        options.setVisualization(false);
         options.setNumberOfTrials(1);
         options.setMatlabFileName("");
         options.setLevelRandSeed(Integer.parseInt(args[1]));

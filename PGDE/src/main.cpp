@@ -31,13 +31,14 @@ int main(int argc, char** argv){
     conf = new Configures();
 
     conf->approach = atoi(argv[5]);
-	srand(atoi(argv[1]));
+    conf->seed = atoi(argv[1]);
+	srand(conf->seed);
 
     //set parametros
     conf->MAXDEEP = 15;
-
+    conf->agentName = string(argv[6]);
     conf->generations = 1000;
-    conf->popSize = 50;
+    conf->popSize = 100;
     conf->elitism = 0.1;
     conf->crossoverRate = 0.9;
     conf->mutationRate = 0.9;
