@@ -33,9 +33,10 @@ int main(int argc, char** argv){
     conf->approach = atoi(argv[5]);
     conf->seed = atoi(argv[1]);
 	srand(conf->seed);
+	system("rm marioai/garbage");
 
     //set parametros
-    conf->MAXDEEP = 15;
+    conf->MAXDEEP = 10;
     conf->agentName = string(argv[6]);
     conf->generations = 1000;
     conf->popSize = 100;

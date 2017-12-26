@@ -70,6 +70,8 @@ void No::erase() {
 void No::str(std::ostream& model) {
      if(type != -1){
         model << " " << mask;
+        if(mask == ";")
+            model << endl;
      }
 
     for(No* n : sons)

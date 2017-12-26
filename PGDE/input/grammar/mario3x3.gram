@@ -1,5 +1,5 @@
 <expr> ::= if( <condition> ){ <expr> }else{ <expr> } | <expr> <expr> | <action>
-<condition> ::= levelScene[11+ <pos> ][11+ <pos> ] <comp> 0 | observation.isMarioOnGround() | observation.mayMarioJump()
+<condition> ::= enemies[11+ <pos> ][11+ <pos> ] <comp> 1 | landscape[11+ <pos> ][11+ <pos> ] <comp> 1 | observation.isMarioOnGround() | observation.mayMarioJump()
 <action> ::= action[ <key> ] = <bool> ;
 <comp> ::= == | !=
 <key> ::= Mario.KEY_LEFT | Mario.KEY_RIGHT | Mario.KEY_DOWN | Mario.KEY_JUMP | Mario.KEY_SPEED
