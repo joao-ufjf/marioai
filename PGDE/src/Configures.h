@@ -29,7 +29,7 @@ class Configures {
     int NUM_THREADS = 1;
     int memorySize;
     int cicles;
-    int seed;
+    int seed;ssss
 
     int optimizationEvaluations;
     int approach;
