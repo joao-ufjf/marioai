@@ -1,0 +1,4 @@
+<expr> ::= <expr> <expr> + | <base> <base> / _c_ * | <var> _c_ *
+<base> ::= _c_ | <base> <base> + | <var> _c_ ^ | <var>
+<op> ::= + | - | * | / | ^
+<var> ::= y1 | y2

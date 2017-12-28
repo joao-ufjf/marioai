@@ -1,0 +1,15 @@
+package ch.idsia.ai.agents.ai;
+
+import ch.idsia.ai.agents.Agent;
+import ch.idsia.mario.engine.sprites.Mario;
+import ch.idsia.mario.environments.Environment;
+import ch.idsia.utils.MathX;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: Sergey Karakovskiy
+ * Date: Apr 8, 2009
+ * Time: 4:03:46 AM
+ * Package: ch.idsia.ai.agents.ai;
+ */
+public class 
