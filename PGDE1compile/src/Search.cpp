@@ -154,28 +154,8 @@ void Search::evolveMario(){
 
     cout << "ACABOU TREINAMENTO" << endl;
 
-    int testSet[4] = {0, 3, 5, 10};
-    int testEvaluations = 1000;
-    bool cleared;
-    int totalCleared;
-    double fit;
-    for(int i = 0; i < 4; i++){
-        conf->level = i;
-        cleared = false;
-        totalCleared = 0;
-        pop[0]->fitnessTest = 0;
-        for(int j = 0; j < testEvaluations; j++){
-            conf->seed = j;
-            fit = EvaluatePopulation(0, 1);
-            pop[0]->fitnessTest += fit;
-            if(fit >= 4000.0){
-                cleared = true;
-                totalCleared++;
-            }
-        }
-        pop[0]->fitnessTest /= testEvaluations;
-        cout << testSet[i] << " " << cleared << " " << totalCleared << " " << pop[0]->fitnessTest << endl;
-    }
+    //Calcula o teste (apesar de chamar validação)
+    EvaluatePopulationValidation(0, 1);
 
 //    fitInTime.push_back(pop[0]->fitnessTest);
 //    for(int k = 0; k < fitInTime.size(); k++)
@@ -389,41 +369,44 @@ void Search::EvaluatePopulationValidation(int initialIndex, int finalIndex, int 
         agent << AGPAgent + GPAgent + BGPAgent + GPAgent + CGPAgent + GPAgent + DGPAgent + pop[i]->trees[0]->str() + " " + EGPAgent;
         agent.close();
     }
-//    cout << "Criou arquivos" << endl;
-//    cin.get();
 
     system("cd marioai \n ant >> garbage \n");
-//    system("cd marioai \n ant \n");
 
-//    cout << "Compilou" << endl;
-//    cin.get();
+    string GPAgent = "GPAgent0";
 
-    #pragma omp parallel for num_threads(conf->NUM_THREADS)
-    for(int i = initialIndex; i < finalIndex; i++){
-        conf->evaluations++;
-        string GPAgent = "GPAgent" + to_string(i);
-//        cout << "Avaliando " << GPAgent << endl;
+    int testSet[4] = {0, 3, 5, 10};
+    int testEvaluations = 1000;
+    bool cleared;
+    int totalCleared;
+    double fit;
+    double fitnessTest;
+    for(int i = 0; i < 4; i++){
+        fitnessTest = 0;
+        conf->level = i;
         string str = "cd marioai/classes \n java ch.idsia.scenarios.GPPlay ch.idsia.ai.agents.ai."+ GPAgent + " ";
         str = str + to_string(conf->seed);
         str = str + " ";
         str = str + to_string(conf->level);
         str = str + " > out\n";
-        system(str.c_str());
-
-        ///lê o score
-        ifstream arq("marioai/classes/out");
-        string scorestr;
-        double score;
-        arq >> scorestr;
-        arq.close();
-        score = atof(scorestr.c_str());
-//        cout << score << endl;
-//        cin.get();
-
-        pop[i]->fitness = score;
-//        cout << pop[i]->fitness  << endl;
+        totalCleared = 0;
+        pop[0]->fitnessTest = 0;
+        for(int j = 0; j < testEvaluations; j++){
+            conf->evaluations++;
+            conf->seed = j;
+            system(str.c_str());
+            ifstream arq("marioai/classes/out");
+            string scorestr;
+            arq >> scorestr;
+            arq.close();
+            fit = atof(scorestr.c_str());
+            fitnessTest += fit;
+            if(fit >= 4000.0){
+                totalCleared++;
+            }
+        }
+        cout << testSet[i] << " " << totalCleared << " " << fitnessTest/testEvaluations << endl;
+        pop[0]->fitnessTest += fitnessTest/testEvaluations;
     }
-//    cin.get();
 }
 
 /**
