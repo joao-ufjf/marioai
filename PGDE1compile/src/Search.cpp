@@ -382,17 +382,17 @@ void Search::EvaluatePopulationValidation(int initialIndex, int finalIndex, int 
     double fitnessTest;
     for(int i = 0; i < 4; i++){
         conf->level = testSet[i];
-        string str = "cd marioai/classes \n java ch.idsia.scenarios.GPPlay ch.idsia.ai.agents.ai."+ GPAgent + " ";
-        str = str + to_string(conf->seed);
-        str = str + " ";
-        str = str + to_string(conf->level);
-        str = str + " > out\n";
         totalCleared = 0;
         pop[0]->fitnessTest = 0;
         fitnessTest = 0;
         for(int j = 0; j < testEvaluations; j++){
             conf->evaluations++;
-            conf->seed = j;
+            ///String de execução do teste
+            string str = "cd marioai/classes \n java ch.idsia.scenarios.GPPlay ch.idsia.ai.agents.ai."+ GPAgent + " "; // SCENARIO AGENT
+            str = str + to_string(j); // SEED
+            str = str + " ";
+            str = str + to_string(conf->level); // DIFFICULTY
+            str = str + " > out\n";
             system(str.c_str());
             ifstream arq("marioai/classes/out");
             string scorestr;
