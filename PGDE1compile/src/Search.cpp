@@ -135,7 +135,7 @@ void Search::evolveMario(){
         }
 
         if(pop[0]->fitness >= 4000.0){
-            cout << "upa lele" << endl;
+//            cout << "upa lele" << endl;
             conf->level++;
             EvaluatePopulation(0, conf->popSize);
             stable_sort(pop, pop + conf->popSize, SortPopulationFitness);
@@ -381,8 +381,7 @@ void Search::EvaluatePopulationValidation(int initialIndex, int finalIndex, int 
     double fit;
     double fitnessTest;
     for(int i = 0; i < 4; i++){
-        fitnessTest = 0;
-        conf->level = i;
+        conf->level = testSet[i];
         string str = "cd marioai/classes \n java ch.idsia.scenarios.GPPlay ch.idsia.ai.agents.ai."+ GPAgent + " ";
         str = str + to_string(conf->seed);
         str = str + " ";
@@ -390,6 +389,7 @@ void Search::EvaluatePopulationValidation(int initialIndex, int finalIndex, int 
         str = str + " > out\n";
         totalCleared = 0;
         pop[0]->fitnessTest = 0;
+        fitnessTest = 0;
         for(int j = 0; j < testEvaluations; j++){
             conf->evaluations++;
             conf->seed = j;

@@ -116,31 +116,24 @@ public class GPAgent6 extends BasicAIAgent implements Agent
 	byte[][] enemies = observation.getEnemiesObservation(); // default: ZLevelEnemies = 0
 	byte[][] landscape = observation.getLevelSceneObservation();// default: ZLevelScene = 1  
 	
-	 if( enemies[11+ -1 ][11+ 1 ] != 1 ){ action[ Mario.KEY_SPEED ] = false ;
- action[ Mario.KEY_JUMP ] = true ;
- }else{ if( observation.isMarioOnGround() ){ if( observation.isMarioOnGround() ){ if( landscape[11+ 0 ][11+ 1 ] != 1 ){ action[ Mario.KEY_DOWN ] = true ;
- }else{ action[ Mario.KEY_DOWN ] = false ;
- } }else{ action[ Mario.KEY_JUMP ] = true ;
- action[ Mario.KEY_LEFT ] = true ;
- } }else{ action[ Mario.KEY_DOWN ] = false ;
- if( enemies[11+ 1 ][11+ -1 ] != 1 ){ action[ Mario.KEY_SPEED ] = true ;
- action[ Mario.KEY_JUMP ] = true ;
- }else{ action[ Mario.KEY_JUMP ] = false ;
- action[ Mario.KEY_SPEED ] = true ;
- } action[ Mario.KEY_SPEED ] = false ;
- if( landscape[11+ 1 ][11+ 1 ] != 1 ){ if( observation.mayMarioJump() ){ if( landscape[11+ 0 ][11+ 1 ] != 1 ){ action[ Mario.KEY_DOWN ] = false ;
+	 if( observation.isMarioOnGround() ){ if( observation.isMarioOnGround() ){ if( observation.mayMarioJump() ){ if( landscape[11+ 0 ][11+ 0 ] != 1 ){ if( landscape[11+ 0 ][11+ 0 ] != 1 ){ if( enemies[11+ 1 ][11+ 0 ] != 1 ){ if( observation.isMarioOnGround() ){ action[ Mario.KEY_SPEED ] = false ;
+ } }else{ if( observation.isMarioOnGround() ){ action[ Mario.KEY_RIGHT ] = true ;
+ } } } } } }else{ if( observation.mayMarioJump() ){ action[ Mario.KEY_SPEED ] = false ;
+ } action[ Mario.KEY_LEFT ] = true ;
  action[ Mario.KEY_DOWN ] = true ;
- }else{ action[ Mario.KEY_DOWN ] = false ;
- action[ Mario.KEY_DOWN ] = true ;
- } }else{ action[ Mario.KEY_JUMP ] = true ;
- action[ Mario.KEY_DOWN ] = true ;
- action[ Mario.KEY_RIGHT ] = true ;
- } }else{ if( observation.mayMarioJump() ){ action[ Mario.KEY_JUMP ] = false ;
- if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
+ if( landscape[11+ 1 ][11+ 0 ] != 1 ){ action[ Mario.KEY_LEFT ] = false ;
+ } if( landscape[11+ -1 ][11+ -1 ] != 1 ){ action[ Mario.KEY_JUMP ] = false ;
+ } if( observation.mayMarioJump() ){ action[ Mario.KEY_LEFT ] = true ;
+ action[ Mario.KEY_RIGHT ] = false ;
+ } if( enemies[11+ -1 ][11+ 1 ] != 1 ){ if( observation.mayMarioJump() ){ action[ Mario.KEY_DOWN ] = false ;
+ }else{ action[ Mario.KEY_DOWN ] = true ;
+ } } if( enemies[11+ -1 ][11+ -1 ] != 1 ){ action[ Mario.KEY_LEFT ] = false ;
  }else{ action[ Mario.KEY_RIGHT ] = true ;
- } }else{ if( enemies[11+ -1 ][11+ -1 ] != 1 ){ action[ Mario.KEY_DOWN ] = false ;
- }else{ action[ Mario.KEY_DOWN ] = false ;
- action[ Mario.KEY_DOWN ] = true ;
+ } action[ Mario.KEY_JUMP ] = false ;
+ action[ Mario.KEY_RIGHT ] = false ;
+ if( observation.isMarioOnGround() ){ action[ Mario.KEY_DOWN ] = true ;
+ action[ Mario.KEY_JUMP ] = false ;
+ } if( observation.mayMarioJump() ){ if( enemies[11+ 1 ][11+ -1 ] != 1 ){ if( observation.isMarioOnGround() ){ action[ Mario.KEY_DOWN ] = true ;
  } } } } } 	
 	//Begin of BGPAgent
 	return action;

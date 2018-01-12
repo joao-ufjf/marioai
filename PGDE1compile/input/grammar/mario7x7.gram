@@ -1,4 +1,4 @@
-<expr> ::= if( <condition> ){ <expr> }else{ <expr> } | <expr> <expr> | <action>
+<expr> ::= if( <condition> ){ <expr> } | if( <condition> ){ <expr> }else{ <expr> } | <expr> <expr> | <action>
 <condition> ::= enemies[11+ <pos> ][11+ <pos> ] <comp> 1 | landscape[11+ <pos> ][11+ <pos> ] <comp> 1 | observation.isMarioOnGround() | observation.mayMarioJump()
 <action> ::= action[ <key> ] = <bool> ;
 <comp> ::= == | !=
