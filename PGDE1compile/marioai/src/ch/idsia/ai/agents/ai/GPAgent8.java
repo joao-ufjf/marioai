@@ -4,6 +4,7 @@ import ch.idsia.ai.agents.Agent;
 import ch.idsia.mario.engine.sprites.Mario;
 import ch.idsia.mario.environments.Environment;
 import ch.idsia.utils.MathX;
+import ch.idsia.mario.engine.sprites.Sprite;
 
 /**
  * Created by IntelliJ IDEA.
@@ -116,9 +117,18 @@ public class GPAgent8 extends BasicAIAgent implements Agent
 	byte[][] enemies = observation.getEnemiesObservation(); // default: ZLevelEnemies = 0
 	byte[][] landscape = observation.getLevelSceneObservation();// default: ZLevelScene = 1  
 	
-	 if( observation.isMarioOnGround() ){ if( enemies[11+ -1 ][11+ 1 ] != 1 ){ if( observation.isMarioOnGround() ){ action[ Mario.KEY_DOWN ] = false ;
- } } }else{ if( observation.isMarioOnGround() ){ action[ Mario.KEY_LEFT ] = true ;
- } } 	
+	 if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = true ;
+ }else{ if( observation.mayMarioJump() ){ if( enemies[11+ -3 ][11+ 3 ] != Sprite.KIND_SPIKY ){ action[ Mario.KEY_JUMP ] = true ;
+ }else{ if( observation.isMarioOnGround() ){ if( landscape[11+ 2 ][11+ -3 ] != 0 ){ action[ Mario.KEY_JUMP ] = false ;
+ }else{ action[ Mario.KEY_LEFT ] = false ;
+ } } } } if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
+ }else{ if( observation.mayMarioJump() ){ if( landscape[11+ 1 ][11+ 2 ] != -11 ){ action[ Mario.KEY_RIGHT ] = true ;
+ action[ Mario.KEY_LEFT ] = false ;
+ } }else{ action[ Mario.KEY_LEFT ] = false ;
+ action[ Mario.KEY_SPEED ] = false ;
+ if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
+ } } } action[ Mario.KEY_RIGHT ] = true ;
+ } 	
 	//Begin of BGPAgent
 	return action;
     }

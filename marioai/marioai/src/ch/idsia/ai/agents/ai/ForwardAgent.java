@@ -4,6 +4,7 @@ import ch.idsia.ai.agents.Agent;
 import ch.idsia.mario.engine.sprites.Mario;
 import ch.idsia.mario.environments.Environment;
 import ch.idsia.utils.MathX;
+import ch.idsia.mario.engine.sprites.Sprite;
 
 /**
  * Created by IntelliJ IDEA.
@@ -26,8 +27,6 @@ public class ForwardAgent extends BasicAIAgent implements Agent
     public void reset()
     {
         action = new boolean[Environment.numberOfButtons];
-        action[Mario.KEY_RIGHT] = true;
-        action[Mario.KEY_SPEED] = true;
         trueJumpCounter = 0;
         trueSpeedCounter = 0;
     }
@@ -112,98 +111,33 @@ public class ForwardAgent extends BasicAIAgent implements Agent
         byte[][] levelScene = observation.getCompleteObservation(/*1, 0*/);
         float[] marioPos = observation.getMarioFloatPos();
         float[] enemiesPos = observation.getEnemiesFloatPos();
-//        String encodedState = observation.getBitmapLevelObservation();
-//        byte[][] levelSceneFromBitmap = decode(encodedState);
-//        encodedState = observation.getBitmapEnemiesObservation();
-//        byte[][] enemiesFromBitmap = decode(encodedState);
+	byte[][] enemies = observation.getEnemiesObservation(); // default: ZLevelEnemies = 0
+	byte[][] landscape = observation.getLevelSceneObservation();// default: ZLevelScene = 1  
+	
+//geracao 99 level: 2 fit: 3467
+ if( observation.mayMarioJump() ){ if( observation.mayMarioJump() ){ if( observation.isMarioOnGround() ){ action[ Mario.KEY_JUMP ] = true ;
+ action[ Mario.KEY_RIGHT ] = true ;
+ }else{ if( enemies[11+ 2 ][11+ 0 ] != Sprite.KIND_GOOMBA ){ action[ Mario.KEY_DOWN ] = false ;
+ } } } }else{ if( landscape[11+ 0 ][11+ -2 ] != 16 ){ if( enemies[11+ 0 ][11+ 2 ] != Sprite.KIND_BULLET_BILL ){ action[ Mario.KEY_SPEED ] = true ;
+ }else{ action[ Mario.KEY_LEFT ] = false ;
+ } if( enemies[11+ 0 ][11+ 1 ] != Sprite.KIND_SPIKY ){ action[ Mario.KEY_DOWN ] = false ;
+ }else{ action[ Mario.KEY_RIGHT ] = true ;
+ } }else{ if( landscape[11+ -1 ][11+ -1 ] != -11 ){ action[ Mario.KEY_JUMP ] = true ;
+ action[ Mario.KEY_RIGHT ] = true ;
+ } } } if( enemies[11+ 0 ][11+ 0 ] != Sprite.KIND_GREEN_KOOPA_WINGED ){ if( observation.isMarioOnGround() ){ if( observation.isMarioOnGround() ){ action[ Mario.KEY_JUMP ] = false ;
+ }else{ if( observation.mayMarioJump() ){ action[ Mario.KEY_LEFT ] = true ;
+ } } } if( landscape[11+ 0 ][11+ -1 ] != -10 ){ if( observation.mayMarioJump() ){ if( landscape[11+ 2 ][11+ 0 ] != -10 ){ action[ Mario.KEY_JUMP ] = true ;
+ }else{ action[ Mario.KEY_JUMP ] = true ;
+ } } } }else{ if( observation.mayMarioJump() ){ if( landscape[11+ 1 ][11+ -2 ] != -10 ){ if( landscape[11+ 2 ][11+ 1 ] != 21 ){ action[ Mario.KEY_LEFT ] = false ;
+ }else{ if( observation.isMarioOnGround() ){ action[ Mario.KEY_LEFT ] = true ;
+ } } } }else{ if( observation.mayMarioJump() ){ action[ Mario.KEY_SPEED ] = true ;
+ } if( observation.mayMarioJump() ){ if( observation.mayMarioJump() ){ action[ Mario.KEY_SPEED ] = true ;
+ } }else{ if( landscape[11+ 0 ][11+ 0 ] != 0 ){ action[ Mario.KEY_RIGHT ] = false ;
+ }else{ action[ Mario.KEY_RIGHT ] = false ;
+ } } if( enemies[11+ 1 ][11+ 0 ] != Sprite.KIND_GREEN_KOOPA_WINGED ){ action[ Mario.KEY_SPEED ] = false ;
+ }else{ if( observation.isMarioOnGround() ){ action[ Mario.KEY_SPEED ] = false ;
+ } } } }
 
-//        System.out.println("\nEnemies BIMAP:");
-//        for (int i = 0; i < enemiesFromBitmap.length; ++i)
-//        {
-//            for (int j = 0; j < enemiesFromBitmap[0].length; ++j)
-//            {
-//                if (enemiesFromBitmap[i][j] != 0)
-////                    System.out.print( "1 ");
-//                    System.out.print(enemiesFromBitmap[i][j] + " ");
-//                else
-//                    System.out.print( "  ");
-//            }
-//            System.out.println("");
-//        }
-
-//        System.out.println("\nBItmaP:");
-//        for (int i = 0; i < levelSceneFromBitmap.length; ++i)
-//        {
-//            for (int j = 0; j < levelSceneFromBitmap[0].length; ++j)
-//            {
-//                if (levelSceneFromBitmap[i][j] != 0)
-////                    System.out.print( "1 ");
-//                    System.out.print(levelSceneFromBitmap[i][j] + " ");
-//                else
-//                    System.out.print( "  ");
-//            }
-//            System.out.println("");
-//        }
-//
-//        System.out.println("\nLEVELScene:");
-//        for (int i = 0; i < levelScene.length; ++i)
-//        {
-//            for (int j = 0; j < levelScene[0].length; ++j)
-//            {
-//                if (levelScene[i][j] != 0)
-//                    System.out.print( "1 ");
-//                else
-//                    System.out.print( "  ");
-//            }
-//            System.out.println("");
-//        }
-
-        
-//        if (levelSceneFromBitmap[11][13] != 0 || levelSceneFromBitmap[11][12] != 0 ||  DangerOfGap(levelSceneFromBitmap))
-//        {
-//            if (observation.mayMarioJump() || ( !observation.isMarioOnGround() && action[Mario.KEY_JUMP]))
-//            {
-//                action[Mario.KEY_JUMP] = true;
-//            }
-//            ++trueJumpCounter;
-//        }
-//        else
-//        {
-//            action[Mario.KEY_JUMP] = false;
-//            trueJumpCounter = 0;
-//        }
-//
-//        if (trueJumpCounter > 16)
-//        {
-//            trueJumpCounter = 0;
-//            action[Mario.KEY_JUMP] = false;
-//        }
-//
-//        action[Mario.KEY_SPEED] = DangerOfGap(levelSceneFromBitmap);
-//        return action;
-//
-//
-        if (levelScene[11][13] != 0 || levelScene[11][12] != 0 ||  DangerOfGap(levelScene))
-        {
-            if (observation.mayMarioJump() || ( !observation.isMarioOnGround() && action[Mario.KEY_JUMP]))
-            {
-                action[Mario.KEY_JUMP] = true;
-            }
-            ++trueJumpCounter;
-        }
-        else
-        {
-            action[Mario.KEY_JUMP] = false;
-            trueJumpCounter = 0;
-        }
-
-        if (trueJumpCounter > 16)
-        {
-            trueJumpCounter = 0;
-            action[Mario.KEY_JUMP] = false;
-        }
-
-        action[Mario.KEY_SPEED] = DangerOfGap(levelScene);
         return action;
     }
 }

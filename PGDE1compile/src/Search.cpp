@@ -152,7 +152,7 @@ void Search::evolveMario(){
 
     }
 
-    cout << "ACABOU TREINAMENTO" << endl;
+//    cout << "ACABOU TREINAMENTO" << endl;
 
     //Calcula o teste (apesar de chamar validação)
     EvaluatePopulationValidation(0, 1);
@@ -374,6 +374,7 @@ void Search::EvaluatePopulationValidation(int initialIndex, int finalIndex, int 
 
     string GPAgent = "GPAgent0";
 
+    double testValues[4];
     int testSet[4] = {0, 3, 5, 10};
     int testEvaluations = 1000;
     bool cleared;
@@ -404,9 +405,11 @@ void Search::EvaluatePopulationValidation(int initialIndex, int finalIndex, int 
                 totalCleared++;
             }
         }
+        testValues[i] = fitnessTest/testEvaluations;
         cout << testSet[i] << " " << totalCleared << " " << fitnessTest/testEvaluations << endl;
         pop[0]->fitnessTest += fitnessTest/testEvaluations;
     }
+    cout << pop[0]->fitness << " " << testValues[0] << " " << testValues[1] << " " << testValues[2] << " " << testValues[3];
 }
 
 /**

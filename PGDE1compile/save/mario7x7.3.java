@@ -1,0 +1,33 @@
+//geracao 84 level: 2 fit: 2187
+ if( observation.isMarioOnGround() ){ if( landscape[11+ 2 ][11+ 0 ] != -10 ){ action[ Mario.KEY_JUMP ] = true ;
+ } if( observation.isMarioOnGround() ){ action[ Mario.KEY_JUMP ] = true ;
+ }else{ action[ Mario.KEY_LEFT ] = true ;
+ } }else{ if( landscape[11+ 0 ][11+ 2 ] != -10 ){ action[ Mario.KEY_JUMP ] = true ;
+ action[ Mario.KEY_LEFT ] = false ;
+ }else{ if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
+ }else{ action[ Mario.KEY_SPEED ] = true ;
+ } } } if( observation.isMarioOnGround() ){ action[ Mario.KEY_JUMP ] = false ;
+ } if( observation.mayMarioJump() ){ if( observation.isMarioOnGround() ){ action[ Mario.KEY_JUMP ] = true ;
+ action[ Mario.KEY_DOWN ] = false ;
+ } if( observation.isMarioOnGround() ){ if( enemies[11+ 1 ][11+ 3 ] != Sprite.KIND_RED_KOOPA_WINGED ){ action[ Mario.KEY_LEFT ] = true ;
+ } }else{ if( observation.mayMarioJump() ){ action[ Mario.KEY_SPEED ] = true ;
+ } } } if( observation.isMarioOnGround() ){ if( enemies[11+ 0 ][11+ -2 ] != Sprite.KIND_GOOMBA ){ if( enemies[11+ -1 ][11+ 1 ] != Sprite.KIND_GOOMBA ){ if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
+ action[ Mario.KEY_RIGHT ] = true ;
+ }else{ if( enemies[11+ -1 ][11+ 3 ] != Sprite.KIND_RED_KOOPA ){ action[ Mario.KEY_DOWN ] = true ;
+ }else{ action[ Mario.KEY_SPEED ] = true ;
+ } } } } } if( observation.mayMarioJump() ){ if( observation.mayMarioJump() ){ if( landscape[11+ 0 ][11+ 3 ] != 16 ){ action[ Mario.KEY_JUMP ] = true ;
+ } if( observation.mayMarioJump() ){ action[ Mario.KEY_JUMP ] = true ;
+ }else{ action[ Mario.KEY_DOWN ] = true ;
+ } }else{ if( observation.isMarioOnGround() ){ action[ Mario.KEY_JUMP ] = true ;
+ }else{ action[ Mario.KEY_DOWN ] = false ;
+ } action[ Mario.KEY_LEFT ] = true ;
+ action[ Mario.KEY_LEFT ] = true ;
+ } } if( enemies[11+ 2 ][11+ 1 ] != Sprite.KIND_SPIKY ){ if( enemies[11+ 3 ][11+ 3 ] != Sprite.KIND_GREEN_KOOPA_WINGED ){ if( observation.mayMarioJump() ){ if( landscape[11+ 1 ][11+ -2 ] != 21 ){ action[ Mario.KEY_JUMP ] = true ;
+ }else{ action[ Mario.KEY_JUMP ] = true ;
+ } } } } if( enemies[11+ 2 ][11+ 3 ] != Sprite.KIND_GOOMBA ){ if( observation.isMarioOnGround() ){ if( landscape[11+ -2 ][11+ 0 ] != 0 ){ if( observation.isMarioOnGround() ){ action[ Mario.KEY_LEFT ] = true ;
+ } if( enemies[11+ 0 ][11+ 1 ] != Sprite.KIND_RED_KOOPA ){ action[ Mario.KEY_DOWN ] = true ;
+ }else{ action[ Mario.KEY_LEFT ] = true ;
+ } } } }else{ if( observation.mayMarioJump() ){ if( observation.mayMarioJump() ){ if( observation.isMarioOnGround() ){ if( landscape[11+ 3 ][11+ -2 ] != -11 ){ action[ Mario.KEY_JUMP ] = true ;
+ } }else{ if( observation.mayMarioJump() ){ action[ Mario.KEY_DOWN ] = false ;
+ }else{ action[ Mario.KEY_DOWN ] = false ;
+ } } } } }

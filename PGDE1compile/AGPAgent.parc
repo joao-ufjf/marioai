@@ -4,6 +4,7 @@ import ch.idsia.ai.agents.Agent;
 import ch.idsia.mario.engine.sprites.Mario;
 import ch.idsia.mario.environments.Environment;
 import ch.idsia.utils.MathX;
+import ch.idsia.mario.engine.sprites.Sprite;
 
 /**
  * Created by IntelliJ IDEA.

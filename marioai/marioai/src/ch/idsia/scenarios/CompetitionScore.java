@@ -17,7 +17,7 @@ import ch.idsia.utils.StatisticalSummary;
  */
 public class CompetitionScore {
 
-    final static int numberOfTrials = 10;
+    final static int numberOfTrials = 2;
     private static int killsSum = 0;
     private static int marioStatusSum = 0;
     private static int timeLeftSum = 0;
@@ -41,8 +41,8 @@ public class CompetitionScore {
         EvaluationOptions options = new CmdLineOptions(new String[0]);
 
         options.setNumberOfTrials(1);
-        options.setVisualization(false);
-        options.setMaxFPS(true);
+        options.setVisualization(true);
+        options.setMaxFPS(false);
         System.out.println("Scoring controller " + controller + " with starting seed " + startingSeed);
 
         double competitionScore = 0;

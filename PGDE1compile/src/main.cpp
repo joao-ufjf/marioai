@@ -38,8 +38,8 @@ int main(int argc, char** argv){
     //set parametros
     conf->MAXDEEP = 10;
     conf->agentName = string(argv[6]);
-    conf->generations = 200;
-    conf->popSize = 50;
+    conf->generations = 100;
+    conf->popSize = 100;
     conf->elitism = 0.1;
     conf->crossoverRate = 0.9;
     conf->mutationRate = 0.9;

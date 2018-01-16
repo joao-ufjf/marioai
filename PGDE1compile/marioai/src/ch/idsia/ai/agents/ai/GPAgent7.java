@@ -4,6 +4,7 @@ import ch.idsia.ai.agents.Agent;
 import ch.idsia.mario.engine.sprites.Mario;
 import ch.idsia.mario.environments.Environment;
 import ch.idsia.utils.MathX;
+import ch.idsia.mario.engine.sprites.Sprite;
 
 /**
  * Created by IntelliJ IDEA.
@@ -116,9 +117,12 @@ public class GPAgent7 extends BasicAIAgent implements Agent
 	byte[][] enemies = observation.getEnemiesObservation(); // default: ZLevelEnemies = 0
 	byte[][] landscape = observation.getLevelSceneObservation();// default: ZLevelScene = 1  
 	
-	 if( enemies[11+ 0 ][11+ -1 ] != 1 ){ if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
- } }else{ if( observation.isMarioOnGround() ){ action[ Mario.KEY_JUMP ] = false ;
- } } 	
+	 action[ Mario.KEY_RIGHT ] = true ;
+ if( observation.isMarioOnGround() ){ if( observation.isMarioOnGround() ){ if( observation.isMarioOnGround() ){ action[ Mario.KEY_LEFT ] = false ;
+ } } }else{ if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
+ if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
+ action[ Mario.KEY_RIGHT ] = false ;
+ } } } 	
 	//Begin of BGPAgent
 	return action;
     }

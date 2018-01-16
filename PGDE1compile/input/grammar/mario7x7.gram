@@ -1,7 +1,9 @@
 <expr> ::= if( <condition> ){ <expr> } | if( <condition> ){ <expr> }else{ <expr> } | <expr> <expr> | <action>
-<condition> ::= enemies[11+ <pos> ][11+ <pos> ] <comp> 1 | landscape[11+ <pos> ][11+ <pos> ] <comp> 1 | observation.isMarioOnGround() | observation.mayMarioJump()
+<condition> ::= enemies[11+ <pos> ][11+ <pos> ] <comp> <enemies> | landscape[11+ <pos> ][11+ <pos> ] <comp> <landscape> | observation.isMarioOnGround() | observation.mayMarioJump()
 <action> ::= action[ <key> ] = <bool> ;
 <comp> ::= == | !=
 <key> ::= Mario.KEY_LEFT | Mario.KEY_RIGHT | Mario.KEY_DOWN | Mario.KEY_JUMP | Mario.KEY_SPEED
 <bool> ::= false | true
+<enemies> ::=  Sprite.KIND_GOOMBA |  Sprite.KIND_GOOMBA_WINGED |  Sprite.KIND_RED_KOOPA |  Sprite.KIND_RED_KOOPA_WINGED |  Sprite.KIND_GREEN_KOOPA |  Sprite.KIND_GREEN_KOOPA_WINGED |  Sprite.KIND_BULLET_BILL |  Sprite.KIND_SPIKY |  Sprite.KIND_SPIKY_WINGED
+<landscape> ::= 0 | 16 | 21 | -10 | -11 | 20
 <pos> ::= -3 | -2 | -1 | 0 | 1 | 2 | 3
