@@ -27,7 +27,27 @@ compile:
     [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
 
 BUILD SUCCESSFUL
-Total time: 4 seconds
+Total time: 3 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
 Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
 
 init:
@@ -97,7 +117,177 @@ compile:
     [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
 
 BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
 Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
 Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
 
 init:
@@ -178,6 +368,156 @@ compile:
 
 BUILD SUCCESSFUL
 Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
 Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
 
 init:
@@ -347,7 +687,47 @@ compile:
     [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
 
 BUILD SUCCESSFUL
-Total time: 5 seconds
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
+
+init:
+
+compile:
+    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
 Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
 
 init:
@@ -378,496 +758,6 @@ compile:
 
 BUILD SUCCESSFUL
 Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 5 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
-Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
-
-init:
-
-compile:
-    [javac] /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml:28: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 100 source files to /home/joao/Documents/marioai/PGDE1compile/marioai/classes
-
-BUILD SUCCESSFUL
-Total time: 6 seconds
 Buildfile: /home/joao/Documents/marioai/PGDE1compile/marioai/build.xml
 
 init:

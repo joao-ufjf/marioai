@@ -1,0 +1,34 @@
+//geracao 99 level: 1 fit: 1387
+ if( observation.mayMarioJump() ){ if( observation.isMarioOnGround() ){ if( observation.mayMarioJump() ){ action[ Mario.KEY_JUMP ] = true ;
+ action[ Mario.KEY_RIGHT ] = false ;
+ } } if( enemies[11+ -1 ][11+ 0 ] != Sprite.KIND_SPIKY_WINGED ){ action[ Mario.KEY_LEFT ] = false ;
+ }else{ if( enemies[11+ 0 ][11+ -2 ] != Sprite.KIND_RED_KOOPA_WINGED ){ action[ Mario.KEY_LEFT ] = false ;
+ }else{ action[ Mario.KEY_SPEED ] = true ;
+ } if( observation.mayMarioJump() ){ action[ Mario.KEY_SPEED ] = false ;
+ } action[ Mario.KEY_LEFT ] = false ;
+ } if( observation.isMarioOnGround() ){ action[ Mario.KEY_RIGHT ] = false ;
+ } if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
+ }else{ action[ Mario.KEY_JUMP ] = false ;
+ } if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
+ }else{ action[ Mario.KEY_DOWN ] = true ;
+ } action[ Mario.KEY_RIGHT ] = true ;
+ }else{ if( enemies[11+ 0 ][11+ 1 ] != Sprite.KIND_GREEN_KOOPA ){ if( observation.mayMarioJump() ){ if( observation.mayMarioJump() ){ action[ Mario.KEY_JUMP ] = false ;
+ }else{ if( landscape[11+ 0 ][11+ -1 ] != 0 ){ action[ Mario.KEY_JUMP ] = false ;
+ action[ Mario.KEY_JUMP ] = false ;
+ }else{ action[ Mario.KEY_LEFT ] = false ;
+ action[ Mario.KEY_JUMP ] = false ;
+ } } if( observation.isMarioOnGround() ){ if( observation.isMarioOnGround() ){ action[ Mario.KEY_RIGHT ] = false ;
+ }else{ action[ Mario.KEY_LEFT ] = true ;
+ } if( landscape[11+ -2 ][11+ 2 ] != -11 ){ action[ Mario.KEY_LEFT ] = true ;
+ }else{ action[ Mario.KEY_DOWN ] = false ;
+ } }else{ if( landscape[11+ 0 ][11+ 1 ] != 20 ){ action[ Mario.KEY_JUMP ] = false ;
+ action[ Mario.KEY_SPEED ] = false ;
+ }else{ if( landscape[11+ -1 ][11+ -1 ] != 21 ){ action[ Mario.KEY_RIGHT ] = true ;
+ } } } }else{ if( landscape[11+ 2 ][11+ 2 ] != 16 ){ action[ Mario.KEY_JUMP ] = false ;
+ } } }else{ if( landscape[11+ -2 ][11+ 0 ] != 0 ){ action[ Mario.KEY_SPEED ] = false ;
+ } action[ Mario.KEY_LEFT ] = false ;
+ action[ Mario.KEY_SPEED ] = true ;
+ if( observation.mayMarioJump() ){ action[ Mario.KEY_LEFT ] = false ;
+ }else{ action[ Mario.KEY_RIGHT ] = false ;
+ } action[ Mario.KEY_JUMP ] = true ;
+ } }

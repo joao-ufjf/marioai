@@ -118,11 +118,7 @@ public class GPAgent7 extends BasicAIAgent implements Agent
 	byte[][] landscape = observation.getLevelSceneObservation();// default: ZLevelScene = 1  
 	
 	 action[ Mario.KEY_RIGHT ] = true ;
- if( observation.isMarioOnGround() ){ if( observation.isMarioOnGround() ){ if( observation.isMarioOnGround() ){ action[ Mario.KEY_LEFT ] = false ;
- } } }else{ if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
- if( observation.mayMarioJump() ){ action[ Mario.KEY_RIGHT ] = false ;
- action[ Mario.KEY_RIGHT ] = false ;
- } } } 	
+ 	
 	//Begin of BGPAgent
 	return action;
     }

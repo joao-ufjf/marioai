@@ -1,0 +1,10 @@
+<expr> ::= if(levelScene[ <pos> ][ <pos> ] <comp> ( <const> )){ <expr> }else{ <expr> } | <expr> <expr> | <action>
+<action> ::= action[ <key> ] = <bool> ;
+<comp> ::= == | !=
+<key> ::= Mario.KEY_RIGHT | Mario.KEY_JUMP | Mario.KEY_SPEED
+<key2> ::= 0 | 1 | 2 | 3 | 4
+<bool> ::= false | true
+<pos> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21
+<const> ::= <num> <op> <num>
+<op> ::= + | -
+<num> ::= 0 | 1 | 2

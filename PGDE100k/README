@@ -1,0 +1,8 @@
+#include <omp.h>
+#include <ctime>
+#include <exception>
+#include <cmath>
+#include <algorithm>
+#include <stdlib.h>
+
+g++ -openmp -O2 -std=c++11 -fopenmp

@@ -117,19 +117,8 @@ public class GPAgent3 extends BasicAIAgent implements Agent
 	byte[][] enemies = observation.getEnemiesObservation(); // default: ZLevelEnemies = 0
 	byte[][] landscape = observation.getLevelSceneObservation();// default: ZLevelScene = 1  
 	
-	 if( observation.isMarioOnGround() ){ action[ Mario.KEY_LEFT ] = true ;
- if( observation.isMarioOnGround() ){ if( landscape[11+ 2 ][11+ 2 ] != -10 ){ action[ Mario.KEY_DOWN ] = false ;
- }else{ action[ Mario.KEY_SPEED ] = true ;
- } }else{ action[ Mario.KEY_RIGHT ] = false ;
- } action[ Mario.KEY_RIGHT ] = true ;
- if( observation.isMarioOnGround() ){ action[ Mario.KEY_RIGHT ] = true ;
- } if( observation.mayMarioJump() ){ if( observation.isMarioOnGround() ){ if( landscape[11+ -3 ][11+ -2 ] != -11 ){ if( enemies[11+ 0 ][11+ 2 ] != Sprite.KIND_SPIKY_WINGED ){ action[ Mario.KEY_LEFT ] = false ;
- action[ Mario.KEY_DOWN ] = false ;
- } } }else{ if( observation.isMarioOnGround() ){ if( observation.isMarioOnGround() ){ action[ Mario.KEY_SPEED ] = false ;
- } } action[ Mario.KEY_JUMP ] = true ;
- action[ Mario.KEY_DOWN ] = true ;
- action[ Mario.KEY_RIGHT ] = false ;
- } } } 	
+	 action[ Mario.KEY_RIGHT ] = true ;
+ 	
 	//Begin of BGPAgent
 	return action;
     }

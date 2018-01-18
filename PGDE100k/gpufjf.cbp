@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gpufjf" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="src/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/gpufjf" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="19 input/grammar/polynomialpowDE.dat input/data/DD10.dat input/data/1024.grp" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-w" />
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="src" />
+					<Add directory="include" />
+					<Add directory="inc" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/gpufjf" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="19 input/grammar/mario3x3.gram input/data/newf7r.dat input/data/1024.grp 0 save/mario3x3.10.java" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add directory="src" />
+					<Add directory="include" />
+					<Add directory="inc" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-g" />
+			<Add option="-openmp" />
+		</Compiler>
+		<Unit filename="inc/DifferencialEvolution.cpp" />
+		<Unit filename="inc/DifferencialEvolution.h" />
+		<Unit filename="include/EvolutionStrategie.h" />
+		<Unit filename="include/MarioParser.h" />
+		<Unit filename="src/Configures.cpp" />
+		<Unit filename="src/Configures.h" />
+		<Unit filename="src/Crossover.cpp" />
+		<Unit filename="src/Crossover.h" />
+		<Unit filename="src/Database.cpp" />
+		<Unit filename="src/Database.h" />
+		<Unit filename="src/EvolutionStrategie.cpp" />
+		<Unit filename="src/Grammar.cpp" />
+		<Unit filename="src/Grammar.h" />
+		<Unit filename="src/IndividuoBuilder.cpp" />
+		<Unit filename="src/IndividuoBuilder.h" />
+		<Unit filename="src/MarioParser.cpp" />
+		<Unit filename="src/Mutation.cpp" />
+		<Unit filename="src/Mutation.h" />
+		<Unit filename="src/No.cpp" />
+		<Unit filename="src/No.h" />
+		<Unit filename="src/Parser.cpp" />
+		<Unit filename="src/Parser.h" />
+		<Unit filename="src/PopulationReplacement.cpp" />
+		<Unit filename="src/PopulationReplacement.h" />
+		<Unit filename="src/Search.cpp" />
+		<Unit filename="src/Search.h" />
+		<Unit filename="src/Selection.cpp" />
+		<Unit filename="src/Selection.h" />
+		<Unit filename="src/SimpleCrossover.cpp" />
+		<Unit filename="src/SimpleCrossover.h" />
+		<Unit filename="src/SimpleIndividuo.cpp" />
+		<Unit filename="src/SimpleIndividuo.h" />
+		<Unit filename="src/SimpleIndividuoBuilder.cpp" />
+		<Unit filename="src/SimpleIndividuoBuilder.h" />
+		<Unit filename="src/SimpleMutation.cpp" />
+		<Unit filename="src/SimpleMutation.h" />
+		<Unit filename="src/SimpleParser.cpp" />
+		<Unit filename="src/SimpleParser.h" />
+		<Unit filename="src/SimpleReplace.cpp" />
+		<Unit filename="src/SimpleReplace.h" />
+		<Unit filename="src/Subject.cpp" />
+		<Unit filename="src/Subject.h" />
+		<Unit filename="src/TournamentSelection.cpp" />
+		<Unit filename="src/TournamentSelection.h" />
+		<Unit filename="src/Tree.cpp" />
+		<Unit filename="src/Tree.h" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
